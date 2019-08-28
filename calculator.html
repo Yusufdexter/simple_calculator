@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+	<script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="container1">
+			<div class="display">
+				<div>
+					<input type="text" id="entry" placeholder="0" readonly="readonly">
+					<input type="text" id="result" readonly="readonly">
+				</div>
+			</div>
+			<div class="field">
+				<div>
+					<div>
+						<button id="clear" onclick="reset()"> AC </button>
+						<button onclick="insertOp('/')"> &#247; </button>
+						<button onclick="insertOp('x')"> x </button>
+						<button onclick="del()"> ↩ </button>
+					</div>
+					<div>
+						<button onclick="insertNum(7)"> 7 </button>
+						<button onclick="insertNum(8)"> 8 </button>
+						<button onclick="insertNum(9)"> 9 </button>
+						<button onclick="brackets()"> ( ) </button>
+					</div>
+					<div>
+						<button onclick="insertNum(4)"> 4 </button>
+						<button onclick="insertNum(5)"> 5 </button>
+						<button onclick="insertNum(6)"> 6 </button>
+						<button onclick="insertOp('-')"> - </button>
+					</div>
+					<div>
+						<button onclick="insertNum(1)"> 1 </button>
+						<button onclick="insertNum(2)"> 2 </button>
+						<button onclick="insertNum(3)"> 3 </button>
+						<button onclick="insertOp('+')"> + </button>
+					</div>
+					<div>
+						<button onclick="insertNum(0)"> 0 </button>
+						<button id="compute" onclick="equal()"> = </button>
+						<button onclick="insertOp('.')"> . </button>
+						<button onclick="insertOp('x*')"> x* </button>
+					</div>
+					<div>
+						<button onclick="insertOp('√')"> √ </button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
